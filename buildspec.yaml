@@ -16,8 +16,8 @@ phases:
         - echo "Build completed on 'date'"
         - mkdir -p deploy
         - cp -r * deploy/
-        - cp appspec.yaml deploy/
-        - cp -r scripts/ deploy/scripts/
+        # - cp appspec.yaml deploy/
+        # - cp -r scripts/ deploy/scripts/
 artifacts:
   files:
     - deploy/**/*
