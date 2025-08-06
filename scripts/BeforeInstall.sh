@@ -11,3 +11,4 @@ mkdir -p /home/ubuntu/nodeapp
 
 echo "Fixing permissions..."
 chown -R ubuntu:ubuntu /home/ubuntu/nodeapp
+sudo chmod -R u+rw /home/ubuntu/nodeapp
