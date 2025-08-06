@@ -20,6 +20,8 @@ phases:
       - cp -r dist/* deploy/
       - cp appspec.yml deploy/
       - cp -r scripts/ deploy/scripts/
+      - cp package.json deploy/
+      - cp package-lock.json deploy/
 
 artifacts:
   files:
