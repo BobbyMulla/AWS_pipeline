@@ -5,6 +5,7 @@ os: linux
 files:
   - source: /
     destination: /home/ubuntu/nodeapp
+    overwrite: yes 
 
 hooks:
   ApplicationStop:
