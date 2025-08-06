@@ -7,17 +7,20 @@ phases:
     commands:
       - echo "Installing dependencies"
       - npm install
+
   build:
     commands:
       - echo "Building application"
       - npm run build
+
   post_build:
-      commands:
-        - echo "Build completed"
-        - mkdir -p deploy
-        - cp -r dist/* deploy/
-        - cp appspec.yaml deploy/
-        - cp -r scripts/ deploy/scripts/
+    commands:
+      - echo "Build completed"
+      - mkdir -p deploy
+      - cp -r dist/* deploy/
+      - cp appspec.yaml deploy/
+      - cp -r scripts/ deploy/scripts/
+
 artifacts:
   files:
     - deploy/**/*
