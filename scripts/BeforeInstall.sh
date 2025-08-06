@@ -4,7 +4,7 @@ echo "Stopping node server if running..."
 pkill node || echo "No node process running"
 
 echo "Deleting previous app directory..."
-rm -rf /home/ubuntu/nodeapp
+sudo rm -rf /home/ubuntu/nodeapp
 
 echo "Creating fresh directory..."
 mkdir -p /home/ubuntu/nodeapp
