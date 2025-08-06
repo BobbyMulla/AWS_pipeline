@@ -8,21 +8,21 @@ files:
 
 hooks:
   ApplicationStop:
-    - location: deploy/scripts/ApplicationStop.sh
+    - location: scripts/ApplicationStop.sh
       timeout: 30
       runas: ubuntu
 
   BeforeInstall:
-    - location: deploy/scripts/BeforeInstall.sh
+    - location: scripts/BeforeInstall.sh
       timeout: 60
       runas: ubuntu
 
   AfterInstall:
-    - location: deploy/scripts/AfterInstall.sh
+    - location: scripts/AfterInstall.sh
       timeout: 60
       runas: ubuntu
 
   ApplicationStart:
-    - location: deploy/scripts/ApplicationStart.sh
+    - location: scripts/ApplicationStart.sh
       timeout: 60
       runas: ubuntu
