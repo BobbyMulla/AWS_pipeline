@@ -11,6 +11,6 @@ sudo rm -rf /home/ubuntu/nodeapp
 echo "Creating fresh directory..."
 mkdir -p /home/ubuntu/nodeapp
 
-echo "Fixing permissions..."
+echo "Fixing permissions......."
 chown -R ubuntu:ubuntu /home/ubuntu/nodeapp
 sudo chmod -R u+rw /home/ubuntu/nodeapp
