@@ -2,23 +2,27 @@ version: 0.0
 
 os: linux
 
+files:
+  - source: deploy
+    destination: /home/ubuntu/nodeapp
+
 hooks:
   ApplicationStop:
-    - location: scripts/ApplicationStop.sh
+    - location: deploy/scripts/ApplicationStop.sh
       timeout: 30
       runas: ubuntu
 
   BeforeInstall:
-    - location: scripts/BeforeInstall.sh
+    - location: deploy/scripts/BeforeInstall.sh
       timeout: 60
       runas: ubuntu
 
   AfterInstall:
-    - location: scripts/AfterInstall.sh
+    - location: deploy/scripts/AfterInstall.sh
       timeout: 60
       runas: ubuntu
 
   ApplicationStart:
-    - location: scripts/ApplicationStart.sh
+    - location: deploy/scripts/ApplicationStart.sh
       timeout: 60
       runas: ubuntu
