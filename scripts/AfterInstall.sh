@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd /home/ec2-user/nodeapp
+cd /home/ubuntu/nodeapp
 
 npm install
